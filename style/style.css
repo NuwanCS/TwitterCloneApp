@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-home-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-color: #15202b;
+}
+
+.navigation-container {
+  border: 10px solid #38444d;
+  flex: 0.5;
+  min-width: 70px;
+  border: 1px solid #15202b;
+}
+
+.navigation {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+
+  color: white;
+  margin-left: 58px;
+}
+
+.logo i {
+  font-size: 30px;
+}
+
+.home-link,
+.explore,
+.notifications,
+.messages,
+.bookmarks,
+.lists,
+.more,
+.create-tweet,
+.profile-container {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 8px;
+
+  color: #00adff;
+}
+
+.profile-container {
+  display: flex;
+}
+
+.btn-logout {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: url(/pwj-twitter-clone-app/exercise/me.jpg);
+  border: 1px solid #979797;
+  object-fit: cover;
+  margin-top: 20px;
+  margin-left: 45px;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #38444d;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.tweets-search-container {
+  height: 30px;
+  margin: 40px;
+  display: flex;
+}
+
+.tweets-search-container input {
+  flex: 1;
+  background-color: rgb(37, 51, 65);
+  border: none;
+  font-size: 20px;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+}
+
+.tweets-search-container input:focus {
+  outline: none;
+}
+
+.tweets-search-container i {
+  display: flex;
+  font-size: 20px;
+  color: white;
+  align-items: center;
+}
+
+.tweets-sidebar-container {
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tweet-trending {
+  flex: 1;
+  height: 500px;
+  margin-right: 40px;
+  margin-left: 40px;
+  border: 1px solid #979797;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(25, 39, 52);
+}
+
+.btn {
+  color: white;
+  background-color: unset;
+  margin-top: 2px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 26px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(29, 161, 242, 0.1);
+  border-radius: 20px;
+  color: rgb(29, 161, 242);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn i {
+  align-items: flex-start;
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.btn-more {
+  color: white;
+  background-color: unset;
+  margin-top: 2px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 19px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-more i {
+  border: 1px solid;
+  border-radius: 50%;
+  margin: 0px 1px 10px 10px;
+  padding: 5px;
+}
+
+.btn-more:focus {
+  outline: none;
+}
+
+.btn-more:hover {
+  background-color: rgba(29, 161, 242, 0.1);
+  border-radius: 20px;
+
+  color: rgb(29, 161, 242);
+}
+
+.btn-tweet {
+  background-color: rgb(29, 161, 242);
+  border-radius: 30px;
+  width: 230px;
+  padding: 15px;
+  color: white;
+  justify-content: center;
+  font-size: 16px;
+  border: none;
+}

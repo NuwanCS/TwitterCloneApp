@@ -1,0 +1,4 @@
+window.onload = () => {
+  displayTwitterData();
+  displayTrends();
+};

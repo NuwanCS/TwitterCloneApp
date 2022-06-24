@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Title</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/tweet.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c939d0e917.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container-home-page">
+      <div class="navigation-container">
+        <div class="navigation">
+          <div class="logo">
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="home-link">
+            <button class="btn"><i class="fa fa-home"> </i> Home</button>
+          </div>
+          <div class="explore">
+            <button class="btn"><i class="fas fa-hashtag"></i> Explore</button>
+          </div>
+          <div class="notifications">
+            <button class="btn">
+              <i class="far fa-bell"></i> Notifications
+            </button>
+          </div>
+          <div class="messages">
+            <button class="btn">
+              <i class="far fa-envelope"></i> Messages
+            </button>
+          </div>
+          <div class="bookmarks">
+            <button class="btn">
+              <i class="far fa-bookmark"></i> Bookmarks
+            </button>
+          </div>
+          <div class="lists">
+            <button class="btn"><i class="far fa-list-alt"></i> Lists</button>
+          </div>
+          <div class="profile-container">
+            <div class="profile">
+              <button class="btn"><i class="fas fa-user"></i> Profile</button>
+            </div>
+          </div>
+          <div class="more">
+            <button class="btn btn-more">
+              <i class="fas fa-ellipsis-h"></i> More
+            </button>
+          </div>
+          <div class="create-tweet">
+            <button class="btn-tweet">Tweet</button>
+          </div>
+          <div class="log-out">
+            <!-- <button class="btn"><i class="fas fa-hashtag"></i> Explore</button> -->
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="tweets-search-container">
+          <input
+            id="user-search-input1"
+            type="text"
+            placeholder="Search Twitter"
+          />
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="tweets-list">
+          <div class="tweet-container">
+            <div class="user-profile"></div>
+            <div class="complete-tweet">
+              <div class="tweet-user-info">
+                <div class="full-name">
+                  Nuwan Senevirathne
+                </div>
+                <div class="user-name">
+                  @Nuwa_CS
+                </div>
+                <div class="tweet-date-container"><span>.</span>20h</div>
+              </div>
+
+              <div class="tweet-text-container">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
+                architecto doloribus ratione voluptatem praesentium repudiandae
+                atque, quasi accusantium iusto alias similique laborum nulla quo
+                officia eveniet obcaecati commodi dicta aspernatur!
+              </div>
+              <div class="tweet-images-container">
+                <div class="tweet-image"></div>
+              </div>
+              <div class="tweet-video-container">
+                <video controls>
+                  <source
+                    src="https://video.twimg.com/ext_tw_video/1274539621645312000/pu/vid/360x640/niKTgsTX0_JsG4zT.mp4?tag=10"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <div class="tweet-actions">
+                <div class="comment"><i class="far fa-comment"></i></div>
+                <div class="retweet"><i class="fas fa-retweet"></i></div>
+                <div class="react"><i class="far fa-heart"></i></div>
+                <div class="share">
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tweets-sidebar-container">
+        <div class="tweets-search-container">
+          <input
+            id="user-search-input"
+            type="text"
+            placeholder="Search Twitter"
+            onkeyup="onEnter(event)"
+          />
+          <i
+            id="search-tweet"
+            class="fas fa-search"
+            onclick="getTwitterData()"
+          ></i>
+        </div>
+        <div class="tweets-sidebar">
+          <div class="tweet-trending">
+            <h3>Trends for you</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/index.js" async defer></script>
+  </body>
+</html>

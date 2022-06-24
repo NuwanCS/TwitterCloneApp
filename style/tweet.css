@@ -1,0 +1,124 @@
+.tweets-list {
+  height: 500px;
+}
+
+.tweet-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid #38444d;
+  color: grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.user-profile {
+  margin-left: 20px;
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.complete-tweet {
+  width: 90%;
+  cursor: pointer;
+}
+
+.full-name {
+  display: inline-block;
+  color: #f3f4f4;
+}
+
+.user-name {
+  display: inline-block;
+}
+
+.tweet-date-container {
+  display: inline-block;
+}
+
+.tweet-text-container {
+  color: #f3f4f4;
+  margin-top: 5px;
+  font-family: Helvetica;
+}
+
+.tweet-actions {
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 70px;
+}
+
+.comment:hover {
+  background-color: rgba(29, 161, 242, 0.3);
+  color: rgb(29, 161, 242);
+  border-radius: 50%;
+
+  justify-content: center;
+}
+.retweet:hover {
+  background-color: rgba(51, 236, 51, 0.3);
+  color: rgb(51, 236, 51);
+  border-radius: 50%;
+  margin: 4px;
+  justify-content: center;
+}
+.react:hover {
+  background-color: rgba(199, 43, 43, 0.3);
+  color: rgb(199, 43, 43);
+  border-radius: 50%;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.share:hover {
+  background-color: rgba(29, 161, 242, 0.3);
+  color: rgb(29, 161, 242);
+  border-radius: 50%;
+  padding: 4px;
+  justify-content: center;
+}
+
+.tweet-images-container {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  height: 200px;
+  border: 1px solid white;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.tweet-image {
+  flex-basis: 50%;
+  flex-grow: 1;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/pwj-twitter-clone-app/nature-wallpaper20.jpg);
+}
+
+.tweet-video-container {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  height: 200px;
+  border: 1px solid white;
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+.tweet-video-container video {
+  height: 100%;
+  width: 100%;
+}
